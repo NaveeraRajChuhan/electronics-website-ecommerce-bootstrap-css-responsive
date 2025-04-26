@@ -68,6 +68,8 @@ https://demo.xpeedstudio.com/marketov2/home3/ */
     height: 543px;
 /* background-color: yellow; */
 object-fit: cover;
+background-color: #f8f8f8;
+
 }
 
 .sec2-box-image {
@@ -105,6 +107,7 @@ width: 250px;
 height: 250px;
 /* margin: 0px 40px; */
 /* background-color: rgb(179, 21, 21); */
+background-color: #f8f8f8;
 padding-right: 20px;
 object-fit: cover;
 
