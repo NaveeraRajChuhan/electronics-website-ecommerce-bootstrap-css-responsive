@@ -156,7 +156,11 @@ justify-content: space-evenly;
     display: flex;
     background-color: blue;
 }
-
+.sec3-left{
+background-color: aqua;
+width: 300px;
+height: 650px;
+}
 
 .Oc{
     /* border: none; */
