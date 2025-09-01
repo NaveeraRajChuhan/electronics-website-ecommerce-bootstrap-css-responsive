@@ -5,13 +5,95 @@ https://demo.xpeedstudio.com/marketov2/home3/ */
 *{
     margin: 0;
     padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: black;
+    font-family: Arial, sans-serif;
+  /* background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba") no-repeat center center/cover; */
+  /* height: 100vh; */
+  /* height: auto; */
 }
 /* --------------------------------------------navbar1----------------------------------------------------- */
-.navbar1{
+/* .navbar1{
     width: 100%;
     height: 105px;
-    /* background-color: bisque; */
+    background-color: bisque;
+} */
+
+
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: rgba(0, 0, 0, 0.4); /* Transparent effect */
+  backdrop-filter: blur(6px);
+  z-index: 1000;
 }
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.btn {
+  background: #ffcc00;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e6b800;
+}
+
+/* Toggle Button (Mobile) */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
 
 /* --------------------------------------------navbar2----------------------------------------------------- */
 
@@ -24,11 +106,14 @@ https://demo.xpeedstudio.com/marketov2/home3/ */
 
 .sec1{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    height: auto;
     /* background-color: aqua; */
     justify-content: space-between;
     padding: 10px 60px;
+    margin-bottom: 150px;
 }
 
 .sec1-left{
@@ -52,6 +137,7 @@ height: 100%;
 .sec1-head1{
     font-size: 35px;
     font-weight: 400;
+    color: white;
     /* margin-right: 30px; */
     /* padding-right: 50px; */
     
@@ -60,12 +146,16 @@ height: 100%;
 .sec1-head2{
 font-size: 50px;
 font-weight: 700;
+    color: white;
+
 }
 
 
 .sec1-right{
     width: 230px;
     height: 340px;
+    /* color: white; */
+
     /* background-color: rgb(0, 255, 21); */
 }
 .sec1-right-img{
@@ -114,12 +204,34 @@ background-color: black;
 
 
 /* --------------------------------------------sec2----------------------------------------------------- */
+/* .container{
+  background-color: #ffcc00;
+}
+
 .sec2{
-    margin-top: 80px;
+  width: 100%;
+  background-color: aqua;
+}
+.sec2-leftimg-wrap{
+ width: 50%;
+    height: 543px;
+object-fit: cover;
+background-color: #f8f8f8;
+}
+
+.sec2-leftimg{
+width: 100%;
+height: 100%;
+padding-bottom: 20px;
+} */
+
+
+
+
+.sec2{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: auto;
     margin-bottom: 100px;
 }
 .sec2-left{
@@ -127,58 +239,37 @@ background-color: black;
     height: 543px;
 object-fit: cover;
 background-color: #f8f8f8;
-
 }
-
 .sec2-box-image {
 width: 100%;
 height: 100%;
 padding-bottom: 20px;
-/* margin-bottom: 80px; */
 }
-
-
 .sec2-right{
-    /* width: 200px; */
     width: 554px;
-
-    /* gap: 20px; */
     height: auto;
 }
 .sec2-right-top{
     width: 100%;
     margin-bottom: 40px;
-    /* height: 180px; */
     height: 251px;
 display: flex;
 flex-wrap: wrap;
-/* margin-left: 30px; */
 justify-content: space-evenly;
-/* justify-content: space-around; */
-
 }
 .sec2-right-box{
 width: 250px;
 height: 250px;
-/* margin: 0px 40px; */
-/* background-color: rgb(179, 21, 21); */
 background-color: #f8f8f8;
 padding-right: 20px;
 object-fit: cover;
-
 }
-
-
-
-
 .sec2-box-img {
 width: 100%;
 height: 100%;
-/* object-fit: cover; */
 }
 
 .sec2-right-bottom{
-
     width: 100%;
     height: 251px;
     display: flex;
@@ -186,7 +277,7 @@ height: 100%;
 justify-content: space-evenly;
 }
 
-
+ 
 
 
 
@@ -292,6 +383,34 @@ height: 650px;
   
   
 
+/* Responsive navbar1*/
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    transition: right 0.3s ease;
+  }
 
+  .nav-links.active {
+    right: 0;
+  }
 
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Responsive navbar1-end*/
+
+@media (max-width: 525px){
+  .sec1-btn2{
+    display: none;
+  }
+}
 
