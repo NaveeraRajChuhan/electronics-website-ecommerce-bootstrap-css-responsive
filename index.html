@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+      <!-- href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
 </head>
 
 <body>
@@ -37,7 +40,7 @@
 
 <div class="sec1">
   <div class="sec1-left">
-    <img class="sec1-left-img" src="./images/sec1-img4.png" alt="Left Banner" />
+    <img class="sec1-left-img animate__animated animate__slow animate__backInLeft " src="./images/sec1-img4.png" alt="Left Banner" />
   </div>
 
   <div class="sec1-mid">
@@ -55,7 +58,7 @@
   </div>
 
   <div class="sec1-right">
-    <img class="sec1-right-img" src="./images/sec1-img2.png" alt="Right Banner" />
+    <img class="sec1-right-img  animate__animated animate__slow animate__backInRight " src="./images/sec1-img2.png" alt="Right Banner" />
   </div>
 </div>
 
@@ -104,7 +107,7 @@
 <div class="sec3">
   <div class="sec3-left">
     <h1>Our Collection</h1>
-    <img class="sec3-left-img" src="./images/sec3-img1.png" alt="Main Banner" />
+    <img class="sec3-left-img animate__animated animate__slow animate__infinite animate__pulse " src="./images/sec3-img1.png" alt="Main Banner" />
   </div>
 
   <div class="sec3-right">
@@ -180,6 +183,56 @@
   </div>
 </div>
 
+ <!-- sec3 end -->
+
+ <!-- sec4 start -->
+
+<!-- sec4 start -->
+<div class="sec4">
+  <h2 class="sec4-title animate__animated animate__fadeInDown">Featured Products</h2>
+  <div class="sec4-products">
+    <div class="product-card animate__animated animate__zoomIn">
+      <img src="./images/sec2-img5.png" alt="Product 1" />
+      <h3>Gaming Laptop</h3>
+      <p>High performance laptop for gaming & work.</p>
+      <button class="product-btn">Shop Now</button>
+    </div>
+    <div class="product-card animate__animated animate__zoomIn animate__delay-1s">
+      <img src="./images/sec1-img4.png" alt="Product 2" />
+      <h3>Wireless Headphones</h3>
+      <p>Crystal clear sound with noise cancellation.</p>
+      <button class="product-btn">Shop Now</button>
+    </div>
+    <div class="product-card animate__animated animate__zoomIn animate__delay-2s">
+      <img src="./images/sec1-img2.png" alt="Product 3" />
+      <h3>Elexa</h3>
+      <p>Track fitness, calls & notifications easily.</p>
+      <button class="product-btn">Shop Now</button>
+    </div>
+  </div>
+</div>
+<!-- sec4 end -->
+
+
+<!-- sec5 start -->
+<div class="sec5">
+  <h2 class="sec5-title animate__animated animate__fadeInUp">What Our Customers Say</h2>
+  <div class="sec5-reviews">
+    <div class="review-card animate__animated animate__fadeInLeft">
+      <p>"Amazing products! I bought a gaming laptop and it's fantastic."</p>
+      <h4>- Ali Khan</h4>
+    </div>
+    <div class="review-card animate__animated animate__fadeInUp animate__delay-1s">
+      <p>"Super fast delivery and high quality electronics. Highly recommended!"</p>
+      <h4>- Sarah Ahmed</h4>
+    </div>
+    <div class="review-card animate__animated animate__fadeInRight animate__delay-2s">
+      <p>"Best online store for gadgets. Love their customer service!"</p>
+      <h4>- John Doe</h4>
+    </div>
+  </div>
+</div>
+<!-- sec5 end -->
 
 
 
@@ -188,115 +241,6 @@
 
 
 
-
-<!-- 
-        <div class="sec3">
-            <div class="sec3-left">
-                <h1></h1>
-                <img src="" alt="" />
-            </div>
-
-            <div class="sec3-right">
-                <div class="sec3-right-top">
-                    <div class="sec3-card1 Oc">
-                        <div class="card lc" style="width: 17rem">
-                            <div class="img-container">
-                                <img src="./images/sec3-img1.png" class="card-img-top lc-img" alt="..." />
-                                <div class="shine"></div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.
-                                </p>
-                            
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sec3-card2 Oc">
-                        <div class="card lc" style="width: 17rem">
-                            <div class="img-container">
-                                <img src="./images/sec3-img2.png" class="card-img-top lc-img" alt="..." />
-                                <div class="shine"></div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sec3-card3 Oc">
-                        <div class="card lc" style="width: 17rem">
-                            <div class="img-container">
-                                <img src="./images/sec3-img3.png" class="card-img-top lc-img" alt="..." />
-                                <div class="shine"></div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sec3-right-bottom">
-                    <div class="sec3-card4 Oc">
-                        <div class="card lc" style="width: 17rem">
-                            <div class="img-container">
-                                <img src="./images/sec2-img5.png" class="card-img-top lc-img" alt="..." />
-                                <div class="shine"></div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sec3-card5 Oc">
-                        <div class="card lc" style="width: 17rem">
-                            <div class="img-container">
-                                <img src="./images/sec3-img5.png" class="card-img-top lc-img" alt="..." />
-                                <div class="shine"></div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sec3-card6 Oc">
-                        <div class="card lc" style="width: 17rem">
-                            <div class="img-container">
-                                <img src="./images/sec3-img6.png" class="card-img-top lc-img" alt="..." />
-                                <div class="shine"></div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>  -->
-        <!-- sec3 end -->
         <!-- container end -->
     </div>
 
