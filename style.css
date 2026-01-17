@@ -72,11 +72,6 @@ body{
 .brand-track span { margin: 0 50px; opacity: 0.8; }
 @keyframes scrollBrands { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-/* --- FOOTER CORRECTION --- */
-.site-footer { padding: 60px 0 20px; border-top: 1px solid #333; margin-top: 100px; }
-.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
-.footer-bottom { text-align: center; border-top: 1px solid #222; margin-top: 40px; padding-top: 20px; color: #777; }
-
 
 
 
@@ -736,7 +731,157 @@ a:focus, button:focus, input:focus { outline: 3px solid rgba(255,204,0,0.12); ou
 
 
 
+/* footer start */
 
+
+
+/* NAVEERA FOOTER STYLES */
+.nvr-main-footer {
+    background-color: #000000;
+    color: #ffffff;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    border-top: 1px solid #1a1a1a;
+}
+
+/* Glowing Yellow Line Animation */
+.nvr-neon-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ffcc00, transparent);
+    animation: nvr-neon-slide 3s linear infinite;
+}
+
+@keyframes nvr-neon-slide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.nvr-logo {
+    font-weight: 800;
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.nvr-logo span { color: #ffffff; }
+
+.nvr-brand-text {
+    color: #b0b0b0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Social Grid Icons */
+.nvr-social-grid { display: flex; gap: 12px; }
+
+.nvr-social-item {
+    width: 40px;
+    height: 40px;
+    background: #111;
+    color: #ffcc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid #222;
+}
+
+.nvr-social-item:hover {
+    background: #ffcc00;
+    color: #000;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+}
+
+/* Link List Styling */
+.nvr-group-title {
+    color: #ffcc00;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.nvr-list { list-style: none; padding: 0; }
+.nvr-list li { margin-bottom: 12px; }
+.nvr-list a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+.nvr-list a:hover {
+    color: #ffcc00;
+    padding-left: 8px;
+}
+
+/* Newsletter Section */
+.nvr-input-wrapper {
+    display: flex;
+    background: #111;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    margin-top: 15px;
+}
+
+.nvr-email-field {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    width: 100%;
+    outline: none;
+}
+
+.nvr-submit-btn {
+    background: #ffcc00;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nvr-submit-btn:hover { background: #ffffff; transform: rotate(15deg); }
+
+/* Bottom Bar */
+.nvr-bottom-bar {
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid #1a1a1a;
+}
+
+.nvr-copy-text, .nvr-legal-links a {
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.nvr-legal-links a { margin-left: 20px; transition: 0.3s; }
+.nvr-legal-links a:hover { color: #ffcc00; }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .nvr-main-footer { text-align: center; }
+    .nvr-social-grid { justify-content: center; margin-bottom: 30px; }
+    .nvr-legal-links { margin-top: 10px; }
+}
+
+
+/* footer end */
 
 
 
